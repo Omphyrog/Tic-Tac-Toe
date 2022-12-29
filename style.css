@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(211, 209, 209);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 2px;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+}
+
+.box {
+  background-color: rgb(170, 169, 169);
+  border: 1px solid black;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.reset-btn {
+  background-color: rgb(170, 169, 169);
+  outline: none;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  border: 1px solid gray;
+  padding: 20px 100px;
+  margin-bottom: 100px;
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+  background-color: gray;
+}
